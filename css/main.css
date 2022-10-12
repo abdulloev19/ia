@@ -61,8 +61,6 @@ header {
     margin-left: 10px;
     height: 35px;
     line-height: 35px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
 }
 
 .header_content .menu_link {
