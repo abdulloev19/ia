@@ -13,7 +13,7 @@
       rgba(15, 15, 15, 0.8),
       rgba(15, 15, 15, 0.4)
     ),
-    url(/img/back2.webp);
+    url(../img/back2.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
