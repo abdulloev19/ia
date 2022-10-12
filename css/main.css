@@ -2,8 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Playfair Display SC", serif; */
+
 }
+
+/* width */
+.iagroup::-webkit-scrollbar {
+    width: 10px;
+  }
+  .iagroup::-webkit-scrollbar-track {
+    background: rgba(15, 15, 15, 0.7);
+  }
+  .iagroup::-webkit-scrollbar-thumb {
+    background: #b6b6b6;
+  }
+  .iagroup::-webkit-scrollbar-thumb:hover {
+    background: rgb(147, 147, 147);
+  }
+
 
 .iagroup {
   width: 100vw;
@@ -13,7 +28,7 @@
       rgba(15, 15, 15, 0.8),
       rgba(15, 15, 15, 0.4)
     ),
-    url(../img/back.jpg);
+    url(/img/backk.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,7 +48,7 @@ header {
   height: 50px;
   /* border-bottom: 1px solid #fff;
   border-top: 1px solid #fff; */
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.878);
   box-shadow: 0 1px 20px rgb(0, 0, 0);
   position: fixed;
 }
@@ -114,7 +129,7 @@ header {
     color: #fff;
     text-align: center;
     transition: all .3s;
-    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
 
@@ -124,17 +139,24 @@ header {
 
 .main_second .main_second_content > h2{
     font-size: 4em;
+    /* background-color: rgba(0, 0, 0, 0.532);   */
 }
 
 .main_second{
     width: 100%;
     height: 100%;
     background: rgba(15, 15, 15, 0.6);
+      background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.8)
+    ),
+    url(../img/back3.jpg);
 }
 
 .main_third{
     width: 100%;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.83);
 }
 
 
