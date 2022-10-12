@@ -28,7 +28,7 @@
       rgba(15, 15, 15, 0.8),
       rgba(15, 15, 15, 0.4)
     ),
-    url(/img/backk.jpg);
+    url(../img/backk.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
