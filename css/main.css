@@ -218,3 +218,8 @@ header {
     animation: pages 1.0s both;
     animation-delay: 1.0s;    /* задержка в 1 секунду */
 }
+
+.main_four {
+    width: 100%;
+    height: 100vh;
+}
