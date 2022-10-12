@@ -28,7 +28,7 @@
       rgba(15, 15, 15, 0.8),
       rgba(15, 15, 15, 0.4)
     ),
-    url(../img/backk.jpg);
+    url(/img/backk.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,7 +90,7 @@ header {
   height: 50px;
   text-align: center;
   align-items: center;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .header_content .menu_link .menu_item a {
@@ -222,5 +222,35 @@ header {
 .main_four {
     width: 100%;
     height: 100vh;
-    border: 4px solid teal;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.878);
+    min-width: 76px;
+    top: 50px;
+    padding: 5px 5px;
+    z-index: 1;
+    margin-left: -1rem;
+  }
+
+  .dropdown-content a {
+    display: block;
+  }
+
+.show {display:block;}
+
+.dropbtn {
+    border: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+#droplink{
+    padding-top: 5px;
 }
