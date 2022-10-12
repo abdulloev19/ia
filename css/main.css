@@ -222,4 +222,5 @@ header {
 .main_four {
     width: 100%;
     height: 100vh;
+    border: 4px solid teal;
 }
