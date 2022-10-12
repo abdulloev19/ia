@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Playfair Display SC", serif; */
+}
+
+.iagroup {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.4)
+    ),
+    url(/img/back2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/* .header_top{
+    width: 100vw;
+    height: 20px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #fff;
+} */
+
+header {
+  width: 100vw;
+  height: 50px;
+  /* border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff; */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 20px rgb(0, 0, 0);
+  position: fixed;
+}
+.header_content {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_content .logo img{
+    height: 35px;
+}
+
+.logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1em;
+    font-size: 1.2rem;
+}
+
+.logo h2{
+    margin-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.header_content .menu_link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.header_content .menu_link .menu_item {
+  display: flex;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.header_content .menu_link .menu_item a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid transparent;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.header_content .menu_link .menu_item a:hover{
+    border-color: black;
+}
+
+.main_first, .main_second{
+    width: 100vw;
+    height: 100%;
+    color: #fff;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main_first .main_first_content, .main_second .main_second_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.main_first .main_first_content > h2, .main_second .main_second_content > h2 {
+    width: 70%;
+    font-size: 6em;
+    color: #fff;
+    text-align: center;
+    transition: all .3s;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
+    font-weight: 100;
+}
+
+.main_first .main_first_content > h2:hover{
+    color: rgb(203, 229, 252);
+}
+
+.main_second .main_second_content > h2{
+    font-size: 4em;
+}
+
+.main_second{
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.6);
+}
+
+.main_third{
+    width: 100%;
+    background: #fff;
+}
+
+
+.services_content{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    font-weight: 100;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
+}
+.services h1{
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid red;
+    text-transform: uppercase;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
+}
+.services_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    animation: h3animation 0.5s both;
+    animation-delay: 0.5s;    /* задержка в 1 секунду */
+    transition: all .3s;
+}
+
+.services_item h3{
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-delay: 0.5s;    /* задержка в 1 секунду */
+    animation: h3animation 0.5s both;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
+    text-transform: uppercase;
+}
+
+.services_item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.services_item p {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    animation: pages 1.0s both;
+    animation-delay: 1.0s;    /* задержка в 1 секунду */
+}
