@@ -1,3 +1,10 @@
+@import url(slider.css);
+
+
+.iagroup {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -69,7 +76,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-left: 1em;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .logo h2{
@@ -83,6 +90,7 @@ header {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  margin-right: 10px;
 }
 
 .header_content .menu_link .menu_item {
@@ -113,7 +121,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.main_second{
+  margin-top: 0;
 }
 
 .main_first .main_first_content, .main_second .main_second_content {
@@ -144,7 +155,6 @@ header {
 
 .main_second{
     width: 100%;
-    height: 100%;
     background: rgba(15, 15, 15, 0.6);
       background: linear-gradient(
       0deg,
@@ -152,76 +162,21 @@ header {
       rgba(15, 15, 15, 0.8)
     ),
     url(../img/back3.jpg);
+    background-size: cover;
 }
 
-.main_third{
-    width: 100%;
-    background: rgba(255, 255, 255, 0.83);
-}
-
-
-.services_content{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    padding: 30px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3,1fr);
-    font-weight: 100;
-    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
-}
-.services h1{
-    height: 50px;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid red;
-    text-transform: uppercase;
-    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
-}
-.services_item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 600px;
-    height: 200px;
-    border: 1px solid #000;
-    margin: 20px auto;
-    animation: h3animation 0.5s both;
-    animation-delay: 0.5s;    /* задержка в 1 секунду */
-    transition: all .3s;
-}
-
-.services_item h3{
-    height: 50px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation-delay: 0.5s;    /* задержка в 1 секунду */
-    animation: h3animation 0.5s both;
-    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
-    text-transform: uppercase;
-}
-
-.services_item:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-.services_item p {
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    animation: pages 1.0s both;
-    animation-delay: 1.0s;    /* задержка в 1 секунду */
-}
 
 .main_four {
     width: 100%;
     height: 100vh;
+    background: linear-gradient(
+        0deg,
+        rgba(15, 15, 15, 0.8),
+        rgba(15, 15, 15, 0.8)
+      ),
+      url(../img/back4jpeg.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
 }
 
 .dropdown-content {
@@ -253,4 +208,67 @@ header {
 
 #droplink{
     padding-top: 5px;
+}
+
+
+.main_third{
+  width: 100%;
+  height: calc(100vh - 50px);
+  background: rgba(255, 255, 255, 0.83);
+}
+
+.main_third_content{
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+  .main_first .main_first_content > h2, .main_second .main_second_content > h2{
+    font-size: 3rem;
+  }
+  .services_item h3{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main_first .main_first_content > h2, .main_second .main_second_content > h2{
+    font-size: 2rem;
+  }
+  .services_item h3{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main_first .main_first_content > h2, .main_second .main_second_content > h2{
+    font-size: 1rem;
+  }
+  .services_item h3{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 727px) {
+  header{
+    height: 200px;
+  }
+  .header_content{
+    flex-direction: column;
+  }
+  .header_content .menu_link{
+    flex-direction: column;
+  }
+  .header_content .menu_link .menu_item{
+    height: 25px;
+    margin-left: 0;
+  }
+  .logo{
+    margin-left: 0;
+
+  }
 }
